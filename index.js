@@ -1,15 +1,15 @@
 // Callback Function
 
-function learnJS(lang, callback) {
-    console.log(`I'm learning ${lang}`);
-    callback();
-}
+// function learnJS(lang, callback) {
+//     console.log(`I'm learning ${lang}`);
+//     callback();
+// }
 
-function done() {
-    console.log(`I've finished this lesson.`);
-}
+// function done() {
+//     console.log(`I've finished this lesson.`);
+// }
 
-learnJS('JavaScript', done);
+// learnJS('JavaScript', done);
 
 // //-------------------------------------------------------------------
 
@@ -36,3 +36,19 @@ learnJS('JavaScript', done);
 //         console.log(`Property ${key} has value ${options[key]}`);        
 //     }
 // }
+
+//-------------------------------------------------------------------
+
+// Object.assign()
+
+const add = {
+    d: 17,
+    e: 20
+};
+
+const clone = Object.assign({}, add);
+clone.d = 99;
+
+console.log(add);
+console.log(clone);
+
